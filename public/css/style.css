@@ -1,0 +1,17 @@
+body{
+    background-color: aqua;
+}
+
+.btn{
+    width: 100px;
+    height: 100px;
+    font-size: xx-large;
+    background-color: olive;
+}
+
+input[type='text']{
+width: 400px;
+height: 100px;
+font-size: xx-large;
+}
+
