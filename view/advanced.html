@@ -13,97 +13,103 @@
     <br>
     <br>
     <br>
-    <button type="button" class="btn btn-primary" onclick="location.href='./index.html'">S</button>
+    <button type="button" class="btn btn-primary btchang"  onclick="location.href='./index.html'">Sim</button>
 
     <!--  Start of Calculator  -->
-    <table class="text-center d-flex justify-content-center">
+    <form action="#" name="calculator" class = main2>
+        <table class="text-center d-flex justify-content-center">
 
-            <td colspan="8">
-                <input type="text" id="result">
-            </td>
+                <td colspan="8">
+                    <input type="text" id="result">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="clearResult()">C</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="posNeg()">+/-</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="buttonNumber('/')">/</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="squared()">x²</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="buttonNumber('7')">7</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="buttonNumber('8')">8</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="buttonNumber('9')">9</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="buttonNumber('*')">*</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="cubed()">x³</button>
+                </td>
+            </tr>
         </tr>
         <tr>
             <td>
-                <button type="button" class="btn btn-primary" onclick="clearResult()">C</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNumber('4')">4</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="posNeg()">+/-</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNumber('5')">5</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="percentage()">%</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNumber('6')">6</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('/')">/</button>
+                <button type="button" class="btn btn-primary" onclick="buttonNumber('-')">-</button>
             </td>
             <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('^')">^</button>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('7')">7</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('8')">8</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('9')">9</button>
-            </td>
-            <td>
-                <button type="button" class="btn btn-primary" onclick="buttonNumber('*')">*</button>
+                <button type="button" class="btn btn-primary" onclick="squareRt()">√</button>
             </td>
         </tr>
     </tr>
     <tr>
         <td>
-            <button type="button" class="btn btn-primary" onclick="buttonNumber('4')">4</button>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('1')">1</button>
         </td>
         <td>
-            <button type="button" class="btn btn-primary" onclick="buttonNumber('5')">5</button>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('2')">2</button>
         </td>
         <td>
-            <button type="button" class="btn btn-primary" onclick="buttonNumber('6')">6</button>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('3')">3</button>
         </td>
         <td>
-            <button type="button" class="btn btn-primary" onclick="buttonNumber('-')">-</button>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('+')">+</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" onclick="fact()">!</button>
         </td>
     </tr>
-</tr>
-<tr>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('1')">1</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('2')">2</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('3')">3</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('+')">+</button>
-    </td>
-</tr>
-</tr>
-<tr>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('0')">0</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="buttonNumber('.')">.</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="deletelast()">Del</button>
-    </td>
-    <td>
-        <button type="button" class="btn btn-primary" onclick="calculateResult()">=</button>
-    </td>
-</tr>
-
-
-
-
+    </tr>
+    <tr>
+        <td>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('0')">0</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" onclick="buttonNumber('.')">.</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary" onclick="deletelast()">Del</button>
+        </td>
+        <td colspan="2">
+            <button type="button" class="btn btn-primary bttake2" onclick="calculateResult()">=</button>
+        </td>
+    </tr>
     </table>
-
+</form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

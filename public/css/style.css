@@ -1,5 +1,5 @@
 body{
-    background-color: aqua;
+    background-color: beige;
 }
 
 .btn{
@@ -7,6 +7,11 @@ body{
     height: 100px;
     font-size: xx-large;
     background-color: olive;
+    border-color: black;
+}
+
+.bttake2 {
+    width: 200px;
 }
 
 input[type='text']{
@@ -15,3 +20,25 @@ height: 100px;
 font-size: xx-large;
 }
 
+.main {
+    background-image: url("/view/pictures/olivetest\ \(1\).jpg");
+    height: auto;
+    width: 425px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.main2{
+        background-image: url("/view/pictures/olivetest\ \(1\).jpg");
+        height: auto;
+        width: 525px;
+        padding: 20px;
+        border-radius: 10px;
+        margin: auto;
+}
+
+.btchang {
+    position: absolute;
+    top: 20%; left: 62%;
+}
